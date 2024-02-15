@@ -1,20 +1,128 @@
+* {
+  box-sizing: border-box;
+}
 @font-face {
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
   src: url(../fonts/DMSerifDisplay-Regular.woff);
 }
 @font-face {
-  font-family: "Jost", sans-serif;
-  src: url(../fonts/Jost-VariableFont_wght.woff);
+  font-family: 'Jost', sans-serif;
+  src: url(../fonts/Jost-Regular.woff);
 }
 @font-face {
-  font-family: "Font Awesome 5 Brands", sans-serif;
+  font-family: 'Font Awesome 5 Brands', sans-serif;
   src: url(../fonts/fa-brands-400.woff);
 }
+@mixin DM {
+  font-family: 'DM Serif Display', serif;
+}
+@mixin Jost {
+  font-family: 'Jost', sans-serif;
+}
+
+$main-text-color: #292f36;
+$secondary-text-color: #4d5053;
+$achivement-text-color: #cda274;
+$achivments-background-color: #f4f0ec;
+
 body {
 }
 header {
+  margin-top: 44px;
+  margin-inline: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .logo {
     width: 177px;
     height: 50px;
+  }
+  nav {
+    width: 243px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+main {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .intro {
+    width: 1200px;
+    height: 760px;
+
+    border-radius: 70px;
+    padding-left: 52px;
+    padding-top: 208px;
+    background-image: url(../assets/head-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__name {
+      @include DM();
+      font-weight: 400;
+      font-size: 65px;
+      line-height: 125%;
+      color: #292f36;
+      text-transform: capitalize;
+      width: 434px;
+      margin: 0;
+    }
+    &__description {
+      @include Jost();
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: #4d5053;
+      width: 434px;
+    }
+    a {
+      display: block;
+      margin-top: 21px;
+      @include Jost();
+      text-align: center;
+      font-size: 18px;
+      line-height: 75px;
+      font-weight: 400;
+      color: #fff;
+      border-radius: 18px;
+      width: 220px;
+      height: 75px;
+      text-transform: capitalize;
+      box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+      background: $main-text-color;
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 737px;
+    & .head__name {
+      @include DM();
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $main-text-color;
+      text-transform: capitalize;
+      margin: 0;
+      margin-top: 96px;
+    }
+    & .head__description {
+      @include Jost();
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: $secondary-text-color;
+    }
   }
 }
