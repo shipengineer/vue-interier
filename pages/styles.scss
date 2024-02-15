@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "DM Serif Display", serif;
+  src: url(../fonts/DMSerifDisplay-Regular.woff);
+}
+@font-face {
+  font-family: "Jost", sans-serif;
+  src: url(../fonts/Jost-VariableFont_wght.woff);
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands", sans-serif;
+  src: url(../fonts/fa-brands-400.woff);
+}
+body {
+}
+header {
+  .logo {
+    width: 177px;
+    height: 50px;
+  }
+}
