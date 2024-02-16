@@ -1,17 +1,19 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
 }
 
 @font-face {
-  font-family: "DM Serif Display", serif;
-  src: url(../fonts/DMSerifDisplay-Regular.woff);
+  font-family: "DM Serif Display";
+  src: url(../fonts/DMSerifDisplay-Regular.ttf);
 }
 @font-face {
-  font-family: "Jost", sans-serif;
+  font-family: "Jost";
   src: url(../fonts/Jost-Regular.woff);
 }
 @font-face {
-  font-family: "Font Awesome 5 Brands", sans-serif;
+  font-family: "Font Awesome 5 Brands";
   src: url(../fonts/fa-brands-400.woff);
 }
 header {
@@ -49,8 +51,7 @@ main .intro {
   background-repeat: no-repeat;
 }
 main .intro__name {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-family: "DM Serif Display", sans-serif;
   font-size: 65px;
   line-height: 125%;
   color: #292f36;
@@ -59,8 +60,8 @@ main .intro__name {
   margin: 0;
 }
 main .intro__description {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
+  font-family: "Jost", sans;
+  font-weight: normal;
   font-size: 22px;
   line-height: 150%;
   letter-spacing: 0.01em;
@@ -70,11 +71,11 @@ main .intro__description {
 main .intro a {
   display: block;
   margin-top: 21px;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans;
+  font-weight: normal;
   text-align: center;
   font-size: 18px;
   line-height: 75px;
-  font-weight: 400;
   color: #fff;
   border-radius: 18px;
   width: 220px;
@@ -87,14 +88,14 @@ main .intro a svg {
   margin-left: 10px;
 }
 main .head {
+  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 737px;
 }
 main .head .head__name {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-family: "DM Serif Display", sans-serif;
   font-size: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
@@ -105,11 +106,116 @@ main .head .head__name {
   margin-top: 96px;
 }
 main .head .head__description {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
+  font-family: "Jost", sans;
+  font-weight: normal;
   font-size: 22px;
   line-height: 150%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #4d5053;
+}
+main .our-projects {
+  display: flex;
+  flex-direction: column;
+}
+main .our-projects .palette {
+  margin-top: 93px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 104px;
+  row-gap: 56px;
+}
+main .our-projects .palette .project {
+  width: 525px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 24px;
+}
+main .our-projects .palette .project .project__img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+}
+main .our-projects .palette .project .description__link {
+  width: 70px;
+  height: 70px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+  cursor: pointer;
+}
+main .our-projects .palette .project:nth-child(2n-1) .project__img {
+  overflow: hidden;
+  border-bottom-right-radius: 70px;
+}
+main .our-projects .palette .project:nth-child(2n) .project__img {
+  overflow: hidden;
+  border-top-left-radius: 70px;
+}
+main .our-projects .palette .project:last-child .project__img {
+  overflow: hidden;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 70px;
+}
+main .our-projects .palette .project:first-child .project__img {
+  overflow: hidden;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 70px;
+}
+main .our-projects .palette .description .description__name {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  text-transform: capitalize;
+}
+main .our-projects .palette .description .description__type {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+main .achivments {
+  margin-top: 96px;
+  position: relative;
+  width: 100%;
+  background-color: #f4f0ec;
+  display: flex;
+  gap: 76px;
+  flex-direction: row;
+  height: 460px;
+  justify-content: center;
+  align-items: center;
+}
+main .achivments .achivment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 fit-content;
+  padding-right: 54px;
+}
+main .achivments .achivment .achive__number {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 85px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #cda274;
+}
+main .achivments .achivment .achive__description {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+main .achivments .achivment:not(:last-child) {
+  border-right: 1px solid #cda274;
 }/*# sourceMappingURL=styles.css.map */
