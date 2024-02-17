@@ -14,8 +14,7 @@
 }
 @font-face {
   font-family: "Font Awesome 5 Brands Regular";
-  src: url("../fonts/brands/fa-brands-400.eot?") format("eot"),
-    url("../fonts/brands/fa-brands-400.woff") format("woff");
+  src: url(../fonts/fa-brands-400.ttf);
 
   font-weight: normal;
   font-style: normal;
@@ -331,6 +330,7 @@ main {
 }
 footer {
   margin-top: 96px;
+  margin-bottom: 134px;
   margin-inline: auto;
   max-width: 1200px;
   display: flex;
@@ -341,6 +341,9 @@ footer {
     flex: 0 0 400px;
   }
   .logo {
+    display: flex;
+    gap: 54px;
+    flex-wrap: wrap;
     .logo__img {
       width: 177px;
       height: 50px;
@@ -354,6 +357,55 @@ footer {
     }
     .logo__brand {
       font-family: "Font Awesome 5 Brands Regular";
+      font-size: 18px;
+    }
+  }
+  .nav {
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    line-height: 50px;
+    text-transform: capitalize;
+    .nav__head {
+      @include DM();
+      font-size: 25px;
+      line-height: 1.25;
+      color: $main-text-color;
+    }
+    .nav__link {
+      @include Jost();
+      text-transform: capitalize;
+      font-size: 22px;
+      line-height: 3;
+      letter-spacing: 0.01em;
+      color: $secondary-text-color;
+    }
+  }
+  .contacts {
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-left: 100px;
+
+    .contacts__head {
+      @include DM();
+      text-transform: capitalize;
+
+      font-size: 25px;
+      line-height: 1.25;
+      color: $main-text-color;
+    }
+    .contacts__address,
+    .contacts__mail,
+    .contacts__phone {
+      text-decoration: none;
+      @include Jost();
+      font-style: normal;
+      font-size: 22px;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      color: #4d5053;
     }
   }
 }

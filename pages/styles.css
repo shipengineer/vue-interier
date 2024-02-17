@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: "Font Awesome 5 Brands Regular";
-  src: url("../fonts/brands/fa-brands-400.eot?") format("eot"), url("../fonts/brands/fa-brands-400.woff") format("woff");
+  src: url(../fonts/fa-brands-400.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -303,6 +303,7 @@ main .articles .palette .article .article__date {
 
 footer {
   margin-top: 96px;
+  margin-bottom: 134px;
   margin-inline: auto;
   max-width: 1200px;
   display: flex;
@@ -312,6 +313,11 @@ footer {
 footer section {
   box-sizing: border-box;
   flex: 0 0 400px;
+}
+footer .logo {
+  display: flex;
+  gap: 54px;
+  flex-wrap: wrap;
 }
 footer .logo .logo__img {
   width: 177px;
@@ -327,4 +333,53 @@ footer .logo .logo__description {
 }
 footer .logo .logo__brand {
   font-family: "Font Awesome 5 Brands Regular";
+  font-size: 18px;
+}
+footer .nav {
+  display: flex;
+  padding-left: 100px;
+  flex-direction: column;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+footer .nav .nav__head {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 25px;
+  line-height: 1.25;
+  color: #292f36;
+}
+footer .nav .nav__link {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 22px;
+  line-height: 3;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+footer .contacts {
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-left: 100px;
+}
+footer .contacts .contacts__head {
+  font-family: "DM Serif Display", sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  line-height: 1.25;
+  color: #292f36;
+}
+footer .contacts .contacts__address,
+footer .contacts .contacts__mail,
+footer .contacts .contacts__phone {
+  text-decoration: none;
+  font-family: "Jost", sans;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #4d5053;
 }/*# sourceMappingURL=styles.css.map */
