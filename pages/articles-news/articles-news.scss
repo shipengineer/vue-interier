@@ -1,0 +1,12 @@
+@import "../../modules/_init";
+@import "../../modules/_variables";
+@import "../../modules/header";
+main {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @import "../../modules/head";
+  @import "../../modules/articles";
+}
+@import "../../modules/footer";
