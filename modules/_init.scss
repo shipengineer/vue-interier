@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url(../../fonts/DMSerifDisplay-Regular.woff2);
+}
+@font-face {
+  font-family: "Jost";
+  src: url(../../fonts/Jost-Regular.woff);
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands Regular";
+  src: url(../../fonts/fa-brands-400.ttf);
+
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin DM {
+  font-family: "DM Serif Display", sans-serif;
+}
+@mixin Jost {
+  font-family: "Jost", sans;
+  font-weight: normal;
+}

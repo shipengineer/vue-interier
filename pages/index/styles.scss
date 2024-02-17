@@ -1,0 +1,204 @@
+@import "../../modules/_init";
+@import "../../modules/_variables";
+@import "../../modules/header";
+main {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .intro {
+    width: 1200px;
+    height: 760px;
+
+    border-radius: 70px;
+    padding-left: 52px;
+    padding-top: 208px;
+    background-image: url(../../assets/head-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__name {
+      @include DM();
+
+      font-size: 65px;
+      line-height: 125%;
+      color: #292f36;
+      text-transform: capitalize;
+      width: 434px;
+      margin: 0;
+    }
+    &__description {
+      @include Jost();
+
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: #4d5053;
+      width: 434px;
+    }
+    a {
+      display: block;
+      margin-top: 21px;
+      @include Jost();
+      text-align: center;
+      font-size: 18px;
+      line-height: 75px;
+
+      color: #fff;
+      border-radius: 18px;
+      width: 220px;
+      height: 75px;
+      text-transform: capitalize;
+      box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+      background: $main-text-color;
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+  .head {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 737px;
+    & .head__name {
+      @include DM();
+
+      font-size: 50px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $main-text-color;
+      text-transform: capitalize;
+      margin: 0;
+      margin-top: 96px;
+    }
+    & .head__description {
+      @include Jost();
+
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: $secondary-text-color;
+    }
+  }
+  .our-projects {
+    display: flex;
+    flex-direction: column;
+    .palette {
+      margin-top: 93px;
+      max-width: $max-width;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 104px;
+      row-gap: 56px;
+
+      .project {
+        width: 525px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        row-gap: 24px;
+        .project__img {
+          flex: 0 0 100%;
+          width: 100%;
+          height: auto;
+        }
+        .description__link {
+          width: 70px;
+          height: 70px;
+          line-height: 80px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $link-color;
+          cursor: pointer;
+        }
+      }
+      .project:nth-child(2n-1) {
+        .project__img {
+          overflow: hidden;
+          border-bottom-right-radius: 70px;
+        }
+      }
+      .project:nth-child(2n) {
+        .project__img {
+          overflow: hidden;
+          border-top-left-radius: 70px;
+        }
+      }
+      .project:last-child {
+        .project__img {
+          overflow: hidden;
+          border-top-left-radius: 0px;
+
+          border-bottom-left-radius: 70px;
+        }
+      }
+      .project:first-child {
+        .project__img {
+          overflow: hidden;
+          border-bottom-right-radius: 0px;
+          border-top-right-radius: 70px;
+        }
+      }
+      .description {
+        .description__name {
+          @include DM();
+          font-size: 25px;
+          line-height: 1.25;
+          letter-spacing: 0.02em;
+          color: $main-text-color;
+          text-transform: capitalize;
+        }
+        .description__type {
+          @include Jost();
+          font-size: 22px;
+          letter-spacing: 0.01em;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .achivments {
+    margin-top: 96px;
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background-color: $achivments-background-color;
+    display: flex;
+    gap: 76px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .achivment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 fit-content;
+      padding-right: 54px;
+      .achive__number {
+        @include DM();
+        font-size: 85px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $achivement-text-color;
+      }
+      .achive__description {
+        @include Jost();
+        text-transform: capitalize;
+        font-size: 22px;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+        color: #4d5053;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid $achivement-text-color;
+      }
+    }
+  }
+  @import "../../modules/_articles";
+}
+@import "../../modules/footer";

@@ -1,0 +1,24 @@
+header {
+  margin-top: 44px;
+  margin-inline: auto;
+  max-width: $max-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 177px;
+    height: 50px;
+  }
+  nav {
+    width: 243px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      @include Jost();
+      font-size: 20px;
+      line-height: 1.25;
+      text-align: center;
+      color: #292f36;
+    }
+  }
+}

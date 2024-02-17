@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: "DM Serif Display";
-  src: url(../fonts/DMSerifDisplay-Regular.woff2);
+  src: url(../../fonts/DMSerifDisplay-Regular.woff2);
 }
 @font-face {
   font-family: "Jost";
-  src: url(../fonts/Jost-Regular.woff);
+  src: url(../../fonts/Jost-Regular.woff);
 }
 @font-face {
   font-family: "Font Awesome 5 Brands Regular";
-  src: url(../fonts/fa-brands-400.ttf);
+  src: url(../../fonts/fa-brands-400.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -35,6 +35,14 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
+header nav a {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: center;
+  color: #292f36;
+}
 
 main {
   margin-top: 57px;
@@ -48,7 +56,7 @@ main .intro {
   border-radius: 70px;
   padding-left: 52px;
   padding-top: 208px;
-  background-image: url(../assets/head-background.png);
+  background-image: url(../../assets/head-background.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
