@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interno</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
-
 <body>
+    <div id="app">
     <header>
         <img src="../../assets/Logo.png" class="logo" />
         <nav>
-            <a href="#">Home</a>
+            <a >Home</a>
             <a href="#">Project</a>
-            <a href="#">Blog</a>
+            <a href="../articles-news/articles-news.html">Blog</a>
         </nav>
     </header>
     <main>
@@ -30,7 +32,10 @@
                         stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                 </svg>
             </a>
+            <button class="reverse-button" v-html=reverseButton @click="reverseHandler"></button>
         </section>
+        <li v-for="(item, index) in items" :id="index" class="items" @click="removeItemHandler">{{item}}</li>
+        <button @click="addItemHandler" class="add-button">Добавить элемент</button>
         <section class="our-projects">
             <div class="head">
                 <h1 class="head__name">follow our projects</h1>
@@ -189,6 +194,6 @@ ideas.
             <a href="tel:+1234567890" class="contacts__phone">(123) 456 - 7890</a>
         </section>
     </footer>
+</div>
 </body>
-
 </html>

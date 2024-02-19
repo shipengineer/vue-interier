@@ -398,4 +398,31 @@ footer .contacts .contacts__phone {
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #4d5053;
+}
+
+.reverse-button {
+  position: absolute;
+  margin-left: 200px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 22px;
+}
+
+.add-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.items {
+  font-size: 30px;
+  align-self: centers;
+  margin-top: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

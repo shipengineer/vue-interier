@@ -175,3 +175,25 @@ main {
   @import "../../modules/_articles";
 }
 @import "../../modules/footer";
+.reverse-button {
+  position: absolute;
+  margin-left: 200px;
+  width: fit-content;
+  height: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 22px;
+}
+.add-button {
+  width: fit-content;
+  height: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+.items {
+  font-size: 30px;
+  align-self: centers;
+  margin-top: 20px;
+  cursor: pointer;
+}
