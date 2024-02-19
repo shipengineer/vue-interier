@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interno</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <select v-model="selected" @change="sortChangeHandler">
+        <option disabled value="null">Выберите вариант сортировки</option>
+        <option value="max">сначала дороже</option>
+        <option value="min">сначала дешевле</option>
+      </select>
+      <ul>
+        <li v-for="item in items" :id="item.id" class="item">
+          <span> {{item.name}} </span>
+          <span> Цена:{{item.price}} </span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

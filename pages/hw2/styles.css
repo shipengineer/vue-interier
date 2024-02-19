@@ -1,0 +1,26 @@
+select {
+  margin: 50px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-left: 50px;
+  border: 3px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  padding: 5px;
+}
+.item:nth-child(2n) {
+  background-color: lightgrey;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}/*# sourceMappingURL=styles.css.map */
