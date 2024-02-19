@@ -60,6 +60,12 @@ const app = new Vue({
       },
     ],
   },
-  methods: {},
+  methods: {
+    getDateToString(timestamp) {
+      return `${new Date(timestamp).getDate()} ${
+        this.month[new Date(timestamp).getMonth()]
+      }, ${new Date(timestamp).getFullYear()}`;
+    },
+  },
 });
 console.log(app);

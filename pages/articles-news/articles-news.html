@@ -76,9 +76,7 @@
               <span class="article__tag">{{article.tag}}</span>
               <h2 class="article__name">{{article.name}}</h2>
               <time class="article__date"
-                >{{new Date(article.date).getDate()}} {{ month[ new
-                Date(article.date).getMonth()]}},{{new
-                Date(article.date).getFullYear()}}</time
+                >{{getDateToString(article.date)}}</time
               >
               <a class="article__link">
                 <svg
