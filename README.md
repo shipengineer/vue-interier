@@ -1,4 +1,4 @@
-##1
+## 1
 Часть 1. Работа с макетом
 
 По заданному [макету](https://www.figma.com/file/okdYD45Tj2JpKsNASccUmf/Interior-Design-Webflow-Website-Template-(Community)-(Copy)-(Copy)?type=design&node-id=101-14&t=hPokjgMtIgcsYlyO-0) создать вёрстку главной страницы (без использования vue).
