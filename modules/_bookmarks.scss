@@ -1,0 +1,20 @@
+@import "../modules/head";
+.bookmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .head {
+    position: absolute;
+    width: 503px;
+    height: 178px;
+    bottom: 0;
+    padding: 41px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    background-color: #fff;
+    & > * {
+      margin: auto;
+    }
+  }
+}

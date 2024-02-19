@@ -1,12 +1,21 @@
 @import "../../modules/_init";
+
 @import "../../modules/_variables";
 @import "../../modules/header";
+@import "../../modules/bookmarks";
+@import "../../modules/latest-post";
 main {
   margin-top: 57px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @import "../../modules/head";
   @import "../../modules/articles";
+  .articles {
+    margin-top: 30px;
+  }
 }
+@import "../../modules/pages";
 @import "../../modules/footer";
+footer {
+  margin-top: 200px;
+}

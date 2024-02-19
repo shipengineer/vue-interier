@@ -44,21 +44,16 @@ header nav a {
   color: #292f36;
 }
 
-main {
-  margin-top: 57px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .head {
+.head {
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 737px;
 }
-main .head .head__name {
+.head .head__name {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
@@ -68,7 +63,7 @@ main .head .head__name {
   margin: 0;
   margin-top: 96px;
 }
-main .head .head__description {
+.head .head__description {
   font-family: "Jost", sans;
   font-weight: normal;
   font-size: 22px;
@@ -76,6 +71,104 @@ main .head .head__description {
   letter-spacing: 0.01em;
   text-align: center;
   color: #4d5053;
+}
+
+.bookmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookmark .head {
+  position: absolute;
+  width: 503px;
+  height: 178px;
+  bottom: 0;
+  padding: 41px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background-color: #fff;
+}
+.bookmark .head > * {
+  margin: auto;
+}
+
+.head {
+  width: 1200px;
+  margin-top: 200px;
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  align-items: start;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  text-transform: capitalize;
+}
+
+.latest-post {
+  position: relative;
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+  margin-top: 27px;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+}
+.latest-post .latest-post__img {
+  border-radius: 50px;
+  max-width: 570px;
+}
+.latest-post .description {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  max-width: 40%;
+  gap: 22px;
+}
+.latest-post .description .description__name {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  text-transform: capitalize;
+}
+.latest-post .description .description__description {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.latest-post .description .description__link {
+  position: absolute;
+  bottom: 73px;
+  right: 56px;
+  width: 52px;
+  height: 52px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+  cursor: pointer;
+}
+.latest-post .description .description__date {
+  position: absolute;
+  height: 33px;
+  bottom: 73px;
+}
+
+main {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main .articles {
   align-self: center;
@@ -88,6 +181,7 @@ main .articles .palette {
   flex-direction: row;
   justify-content: space-between;
   gap: 27px;
+  flex-wrap: wrap;
 }
 main .articles .palette .article {
   position: relative;
@@ -97,10 +191,10 @@ main .articles .palette .article {
   border: 1px #e7e7e7 solid;
   border-radius: 62px;
 }
-main .articles .palette .article:nth-child(2n) {
+main .articles .palette .article:nth-child(2) {
   background-color: #f4f0ec;
 }
-main .articles .palette .article:nth-child(2n) .article__link {
+main .articles .palette .article:nth-child(2) .article__link {
   background-color: #fff;
 }
 main .articles .palette .article .article__img {
@@ -129,6 +223,7 @@ main .articles .palette .article .article__name {
   width: 305px;
   height: 100px;
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   text-transform: capitalize;
   font-size: 25px;
   line-height: 1.25;
@@ -155,6 +250,26 @@ main .articles .palette .article .article__date {
   position: absolute;
   height: 33px;
   bottom: 37px;
+}
+main .articles {
+  margin-top: 30px;
+}
+
+.page {
+  align-self: center;
+  margin-top: 51px;
+  gap: 20px;
+  display: flex;
+}
+.page .page__selector {
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #cda274;
+  cursor: pointer;
 }
 
 footer {
@@ -200,6 +315,7 @@ footer .nav {
 }
 footer .nav .nav__head {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 25px;
   line-height: 1.25;
   color: #292f36;
@@ -222,6 +338,7 @@ footer .contacts {
 }
 footer .contacts .contacts__head {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   text-transform: capitalize;
   font-size: 25px;
   line-height: 1.25;
@@ -238,4 +355,8 @@ footer .contacts .contacts__phone {
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #4d5053;
+}
+
+footer {
+  margin-top: 200px;
 }/*# sourceMappingURL=articles-news.css.map */

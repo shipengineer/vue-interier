@@ -62,6 +62,7 @@ main .intro {
 }
 main .intro__name {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 65px;
   line-height: 125%;
   color: #292f36;
@@ -106,6 +107,7 @@ main .head {
 }
 main .head .head__name {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 50px;
   line-height: 125%;
   letter-spacing: 0.02em;
@@ -178,6 +180,7 @@ main .our-projects .palette .project:first-child .project__img {
 }
 main .our-projects .palette .description .description__name {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 25px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -212,6 +215,7 @@ main .achivments .achivment {
 }
 main .achivments .achivment .achive__number {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 85px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -240,6 +244,7 @@ main .articles .palette {
   flex-direction: row;
   justify-content: space-between;
   gap: 27px;
+  flex-wrap: wrap;
 }
 main .articles .palette .article {
   position: relative;
@@ -249,10 +254,10 @@ main .articles .palette .article {
   border: 1px #e7e7e7 solid;
   border-radius: 62px;
 }
-main .articles .palette .article:nth-child(2n) {
+main .articles .palette .article:nth-child(2) {
   background-color: #f4f0ec;
 }
-main .articles .palette .article:nth-child(2n) .article__link {
+main .articles .palette .article:nth-child(2) .article__link {
   background-color: #fff;
 }
 main .articles .palette .article .article__img {
@@ -281,6 +286,7 @@ main .articles .palette .article .article__name {
   width: 305px;
   height: 100px;
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   text-transform: capitalize;
   font-size: 25px;
   line-height: 1.25;
@@ -352,6 +358,7 @@ footer .nav {
 }
 footer .nav .nav__head {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   font-size: 25px;
   line-height: 1.25;
   color: #292f36;
@@ -374,6 +381,7 @@ footer .contacts {
 }
 footer .contacts .contacts__head {
   font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
   text-transform: capitalize;
   font-size: 25px;
   line-height: 1.25;

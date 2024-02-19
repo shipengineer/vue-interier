@@ -1,0 +1,17 @@
+.page {
+  align-self: center;
+  margin-top: 51px;
+  gap: 20px;
+  display: flex;
+
+  .page__selector {
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $achivement-text-color;
+    cursor: pointer;
+  }
+}

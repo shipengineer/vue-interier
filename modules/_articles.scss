@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 27px;
+    flex-wrap: wrap;
     .article {
       position: relative;
       width: 382px;
@@ -15,7 +16,7 @@
       padding: 21px;
       border: 1px #e7e7e7 solid;
       border-radius: 62px;
-      &:nth-child(2n) {
+      &:nth-child(2) {
         background-color: $achivments-background-color;
         .article__link {
           background-color: #fff;

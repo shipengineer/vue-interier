@@ -1,0 +1,70 @@
+@import "./variables";
+.head {
+  width: $max-width;
+  margin-top: 200px;
+  @include DM();
+  align-items: start;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  text-transform: capitalize;
+}
+.latest-post {
+  position: relative;
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+  margin-top: 27px;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+
+  .latest-post__img {
+    border-radius: 50px;
+    max-width: 570px;
+  }
+  .description {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    max-width: 40%;
+    gap: 22px;
+    .description__name {
+      @include DM();
+
+      font-size: 25px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      color: $main-text-color;
+      text-transform: capitalize;
+    }
+    & .description__description {
+      @include Jost();
+
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: $secondary-text-color;
+    }
+    .description__link {
+      position: absolute;
+      bottom: 73px;
+      right: 56px;
+      width: 52px;
+      height: 52px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $link-color;
+      cursor: pointer;
+    }
+    .description__date {
+      position: absolute;
+      height: 33px;
+      bottom: 73px;
+    }
+  }
+}
