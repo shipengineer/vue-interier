@@ -62,9 +62,9 @@ const app = new Vue({
   },
   methods: {
     getDateToString(timestamp) {
-      return `${new Date(timestamp).getDate()} ${
-        this.month[new Date(timestamp).getMonth()]
-      }, ${new Date(timestamp).getFullYear()}`;
+                const date = new Date(timestamp * 1000);
+                return `${date.getDate()} ${this.month[date.getMonth()]} ${date.getFullYear()}`;
+    } 
     },
   },
 });
