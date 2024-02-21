@@ -26,7 +26,7 @@
           />
          
         </div>
-        <section class="article">
+        <section class="big-article">
           <div class="content">
             <p class="content__name">let's get solution for building construction work</p>
             <div class="img-container">
@@ -56,13 +56,38 @@
           </div>
           <div class="tags">
             <span class="tags__name">Tags</span>
-            <p class="tags__element">kitchen</p>
-            <p class="tags__element">bedroom</p>
-            <p class="tags__element">building</p>
-            <p class="tags__element">architecture</p>
-            <p class="tags__element">kitchen planing</p>
-            <p class="tags__element">bedroom</p>
+            <span v-for="tags in articles[0].tag" class="tags__element" @click="addFilter">{{tags}}</p>
           </div>
+          <section class="articles">
+            <div class="palette">
+              <div v-for="article in filteredArticles" class="article" :id="article.id">
+                <img :src="article.img" class="article__img" />
+                <span class="article__tag">{{article.tag[0]}}</span>
+                <h2 class="article__name">{{article.name}}</h2>
+                <time class="article__date"
+                  >{{getDateToString(article.date)}}</time
+                >
+                <a class="article__link">
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.77144 14.9527L7.71429 8.267L1.77144 1.58128"
+                      stroke="#292F36"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+          </section>
         </section>
         <footer>
           <section class="logo">

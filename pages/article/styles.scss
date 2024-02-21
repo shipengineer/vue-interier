@@ -3,6 +3,13 @@
 @import "../../modules/header";
 @import "../../modules/bookmarks";
 @import "../../modules/head";
+@import "../../modules/articles";
+.articles {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 220px;
+  align-self: flex-start;
+}
 main {
   margin-inline: auto;
   margin-top: 57px;
@@ -11,14 +18,16 @@ main {
   align-items: center;
   max-width: $max-width;
 }
-.article {
+.big-article {
   display: grid;
   grid-template-columns: 2fr 1fr;
+
   margin-top: 200px;
   margin-inline: auto;
   gap: 52px;
 
   .content {
+    grid-row: 1/3;
     .content__name {
       @include DM();
       text-transform: capitalize;
@@ -46,7 +55,7 @@ main {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr fit-content;
+  grid-template-rows: fit-content fit-content;
   row-gap: 46px;
   margin-bottom: 45px;
   .img-container__img {
@@ -135,7 +144,10 @@ main {
   }
 }
 .tags {
+  grid-row: 1;
+  grid-column: 2;
   width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -151,11 +163,13 @@ main {
     letter-spacing: 0.02em;
     color: $main-text-color;
   }
+
   .tags__element {
-    &:first-of-type {
+    &.selected {
       background-color: #4d5053;
       color: #fff;
     }
+    cursor: pointer;
     text-align: center;
     border-radius: 10px;
     padding: 9px 30px;
