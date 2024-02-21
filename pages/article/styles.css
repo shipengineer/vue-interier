@@ -134,14 +134,44 @@ main {
 .article {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-top: 200px;
+  margin-inline: auto;
+  gap: 52px;
+}
+.article .content .content__name {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 50px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  margin: 27px 0 20px;
+}
+.article .content .content__text {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  display: block;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.article .content .content__img {
+  border-radius: 45px;
+  margin: 44px 0 35px;
 }
 
 .img-container {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2fr fit-content;
+  row-gap: 46px;
+  margin-bottom: 45px;
 }
 .img-container .img-container__img {
+  border-radius: 45px;
   grid-row: 1;
   grid-column: 1/3;
 }
@@ -152,6 +182,36 @@ main {
 .img-container .img-container__tags {
   grid-column: 3;
   grid-row: 2;
+}
+
+.list {
+  counter-reset: lis;
+}
+.list .list__element {
+  font-family: "Jost", sans;
+  font-weight: normal;
+  width: 95%;
+  position: relative;
+  margin-left: 1em;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+.list .list__element::marker {
+  content: "";
+}
+.list .list__element::before {
+  position: absolute;
+  left: -1em;
+  counter-increment: lis;
+  content: counter(lis);
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #cda274;
 }
 
 .achivments {
@@ -182,7 +242,6 @@ main {
   height: fit-content;
   bottom: 200px;
   font-size: 200px;
-  font-style: italic;
   height: 45px;
   letter-spacing: 0.02em;
   color: #cda274;
@@ -197,6 +256,42 @@ main {
   font-size: 22px;
   letter-spacing: 0.01em;
   color: #cda274;
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tags .tags__name {
+  flex: 0 0 100%;
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #292f36;
+}
+.tags .tags__element {
+  text-align: center;
+  border-radius: 10px;
+  padding: 9px 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 41px;
+  background-color: #f4f0ec;
+  border-radius: 10px;
+  font-family: "Jost", sans;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #292f36;
 }
 
 footer {
