@@ -267,6 +267,7 @@ main {
   gap: 10px;
 }
 .tags .tags__name {
+  margin-bottom: 24px;
   flex: 0 0 100%;
   font-family: "DM Serif Display", sans-serif;
   font-weight: 400;
@@ -292,6 +293,10 @@ main {
   letter-spacing: 0.02em;
   text-align: center;
   color: #292f36;
+}
+.tags .tags__element:first-of-type {
+  background-color: #4d5053;
+  color: #fff;
 }
 
 footer {
