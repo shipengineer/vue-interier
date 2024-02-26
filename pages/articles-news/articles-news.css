@@ -36,7 +36,7 @@ header nav {
   justify-content: space-between;
 }
 header nav a {
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.25;
@@ -64,7 +64,7 @@ header nav a {
   margin-top: 96px;
 }
 .head .head__description {
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 150%;
@@ -139,7 +139,7 @@ header nav a {
   text-transform: capitalize;
 }
 .latest-post .description .description__description {
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 150%;
@@ -210,7 +210,7 @@ main .articles .palette .article .article__tag {
   background-color: #fff;
   border-radius: 8px;
   border-bottom-left-radius: 0px;
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   text-align: center;
   font-size: 16px;
@@ -295,7 +295,7 @@ footer .logo .logo__img {
   height: 50px;
 }
 footer .logo .logo__description {
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 1.5;
@@ -321,7 +321,7 @@ footer .nav .nav__head {
   color: #292f36;
 }
 footer .nav .nav__link {
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   text-transform: capitalize;
   font-size: 22px;
@@ -348,7 +348,7 @@ footer .contacts .contacts__address,
 footer .contacts .contacts__mail,
 footer .contacts .contacts__phone {
   text-decoration: none;
-  font-family: "Jost", sans;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 22px;

@@ -5,25 +5,25 @@
 }
 
 @font-face {
-  font-family: "DM Serif Display";
+  font-family: 'DM Serif Display';
   src: url(../../fonts/DMSerifDisplay-Regular.woff2);
 }
 @font-face {
-  font-family: "Jost";
+  font-family: 'Jost';
   src: url(../../fonts/Jost-Regular.woff);
 }
 @font-face {
-  font-family: "Font Awesome 5 Brands Regular";
+  font-family: 'Font Awesome 5 Brands Regular';
   src: url(../../fonts/fa-brands-400.ttf);
 
   font-weight: normal;
   font-style: normal;
 }
 @mixin DM {
-  font-family: "DM Serif Display", sans-serif;
+  font-family: 'DM Serif Display', sans-serif;
   font-weight: 400;
 }
 @mixin Jost {
-  font-family: "Jost", sans;
+  font-family: 'Jost', sans-serif;
   font-weight: normal;
 }
